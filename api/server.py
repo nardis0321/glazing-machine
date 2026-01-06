@@ -77,7 +77,7 @@ app.add_middleware(
 )
 
 # 4. API 엔드포인트 (백엔드 경로)
-@app.post("/glaze")
+@app.post("/api/glaze")
 async def glaze_endpoint(request: ChatRequest):
     try:
         result = get_glaze_response(request.message)
